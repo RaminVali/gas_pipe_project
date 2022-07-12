@@ -385,8 +385,7 @@ st.plotly_chart(fig)
 st.write(''' 
 # Conclusions
 
-In this project we explored the incident data provided by the [Pipeline and Hazardous Materials Safety Administration (PHMSA)]
-(https://www.phmsa.dot.gov/data-and-statistics/pipeline/distribution-transmission-gathering-lng-and-liquid-accident-and-incident-data)
+In this project we explored the incident data provided by the Pipeline and Hazardous Materials Safety Administration [(PHMSA)](https://www.phmsa.dot.gov/data-and-statistics/pipeline/distribution-transmission-gathering-lng-and-liquid-accident-and-incident-data)
  and found some insights related to the locations, causes and associated casualties of gas pipeline incidents in the United States
 over the last 10 years. We utilised [plotly](https://plotly.com/) to make interactive
 visualisations of the data to help us understand the available data better. 
