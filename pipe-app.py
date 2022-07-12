@@ -11,7 +11,7 @@ import plotly.express as px
 st.write("""
 
 # Exploring USA Gas Pipeline Accident Data
-The United States maintains over 3.2 million kilometres of natural gas distribution mains and pipelines, over 500,000 kilometres of gas transmission and gathering pipelines,over 180,000 kilometres hazardous liquid pipeline, and 114 active liquid natural gas
+The United States maintains over 3.2 million kilometres of natural gas distribution mains and pipelines, over 500,000 kilometres of gas transmission and gathering pipelines, over 180,000 kilometres hazardous liquid pipelines, and 114 active liquid natural gas
 plants that are connected to natural gas transmission and distribution 
  systems [[1]](https://www.ncsl.org/research/energy/state-gas-pipelines.aspx#:~:text=The%20United%20States%20maintains%20about,gas%20transmission%20and%20distribution%20systems.).
 
