@@ -1,0 +1,5 @@
+.gcloudignore
+#!include:.gitignore
+#!include:.dockerignore
+*.ipynb
+*.md

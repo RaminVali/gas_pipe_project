@@ -34,7 +34,7 @@ The figures below show the geographical locations of the gas pipelines. The data
 The pipeline representations are in three parts, the __Transmission lines__, the __Distribution lines__, and finally the __Gulf of Mexico lines__. 
 """)
 # Loading the converted shape files. The shape files have to be converted from their geometric multiline representations to lat/lon 
-# representations of the two ends of each of the segments. The algorithem to do this is in the previous versions of the code in the github repository. 
+# representations of the two ends of each of the segments. The algorithm to do this is in the previous versions of the code in the github repository. 
 # You can simply uncomment each cell and have the .pkl variable constructed again. It just takes a little bit fo time, hence the 
 # loading of the variable to save time.  
 geo_df_trans = pd.read_pickle('geo_df_trans.pkl') #Gas transmission lines file

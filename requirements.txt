@@ -1,3 +1,4 @@
-pandas==1.4.2 
-plotly==5.6.0 
-streamlit==1.10.0
+pandas==1.5.3
+plotly==5.13.00 
+streamlit==1.18.0
+pyproj==3.4.1
