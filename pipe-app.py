@@ -31,7 +31,8 @@ In this project we explore the incident data provided by the **Pipeline and Haza
 st.write("""
 # Pipeline Geographical Locations 
 The figures below show the geographical locations of the gas pipelines. The data associated with these can viwed by hovering over the individual shape. 
-The pipeline representations are in three parts, the __Transmission lines__, the __Distribution lines__, and finally the __Gulf of Mexico lines__. 
+The pipeline representations are in two parts, the __Transmission lines__, and the __Distribution lines__. The map is interactive and can be manipulated with 
+the menu options on the top right. The information about each pipeline can be viewed by hovering over it.
 """)
 # Loading the converted shape files. The shape files have to be converted from their geometric multiline representations to lat/lon 
 # representations of the two ends of each of the segments. The algorithm to do this is in the previous versions of the code in the github repository. 
@@ -39,7 +40,7 @@ The pipeline representations are in three parts, the __Transmission lines__, the
 # loading of the variable to save time.  
 geo_df_trans = pd.read_pickle('geo_df_trans.pkl') #Gas transmission lines file
 geo_df = pd.read_pickle('geo_df.pkl') # Gas distribution lines file, its the largest
-geo_df_mx = pd.read_pickle('geo_df_mx.pkl') #Gas pipelines in the Gulf of Mexico
+#geo_df_mx = pd.read_pickle('geo_df_mx.pkl') #Gas pipelines in the Gulf of Mexico
 
 #Plotting the dataframe we made with lats, lons and names etc form the HGL, Inter/Intra and Gulf of Mexico shape files, 
 # we manipulate the hoverdata to display what we like.
@@ -53,7 +54,7 @@ fig = px.line_geo(geo_df,lat = geo_df.lats, lon = geo_df.lons, hover_name = geo_
                              'Category':False, #remove category from hover data
                             },
                                color = 'Category' )
-fig.update_traces(line_color='#293d6e', line_width=0.25) #updating the default lines used for HGL piepes
+fig.update_traces(line_color='#8723e3', line_width=0.25) #updating the default lines used for HGL piepes
 # #--------------------------------------
 
 #HGL Transmission Lines
@@ -65,25 +66,25 @@ fig2 = px.line_geo(geo_df_trans,lat = geo_df_trans.lats, lon = geo_df_trans.lons
                              'Category':False, #remove category from hover data
                             },
                                color = 'Category')
-fig2.update_traces(line_color='#000000', line_width=.75) #updating the default lines used for HGL piepes
+fig2.update_traces(line_color='#D70040', line_width=.75) #updating the default lines used for HGL piepes
 # #
 
-# # GULF OF MEXICO
-fig3 = px.line_geo(geo_df_mx,lat = geo_df_mx.lats, lon = geo_df_mx.lons, hover_name = geo_df_mx.Operator_Name, locationmode="USA-states", scope="usa",
-                 hover_data={'lats':False, #remove latitude form hover data
-                             'lons':False, #remove longitude form hover data
-                             'Category':False, #remove category from hover data
-                              },
-                              color = 'Category' )
+# # # GULF OF MEXICO
+# fig3 = px.line_geo(geo_df_mx,lat = geo_df_mx.lats, lon = geo_df_mx.lons, hover_name = geo_df_mx.Operator_Name, locationmode="USA-states", scope="usa",
+#                  hover_data={'lats':False, #remove latitude form hover data
+#                              'lons':False, #remove longitude form hover data
+#                              'Category':False, #remove category from hover data
+#                               },
+#                               color = 'Category' )
 
-fig3.update_traces(line_color='#8723e3', line_width=0.25) #updating the default lines used for HGL piepes
+# fig3.update_traces(line_color='#8723e3', line_width=0.25) #updating the default lines used for HGL piepes
 
 
 
 # # #--------------------------------------
 # #Adding all the traces together in one map
 fig.add_trace(fig2.data[0]) 
-fig.add_trace(fig3.data[0]) 
+#fig.add_trace(fig3.data[0]) 
 # # #--------------------------------------
 
 # #fig.update_layout()
