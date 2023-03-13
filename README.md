@@ -31,7 +31,7 @@ The following packages are used in this project:
 ![Deploy3](Deploy3.png)
 ![Deploy4](Deploy4.png)
 
-- Since GCP charges money, I have taken the project down, however, it is still up in here:
+- Since GCP charges money, I have taken the project down, however, it is still up in [here](https://gas-pipe-project.herokuapp.com/): 
 
 I would like to acknowledge the following websites and resources:
 - [GeoPandas Tutorial: How to plot US Maps in Python](https://jcutrer.com/python/learn-geopandas-plotting-usmaps)
