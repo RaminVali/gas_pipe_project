@@ -26,10 +26,10 @@ The following packages are used in this project:
 ![Build2](Build2.png)
 
 - Once the build has been successful you can deploy the project on GCP
-![Deploy1](Deploy 1.png)
-![Deploy2](Deploy 2.png)
-![Deploy3](Deploy 3.png)
-![Deploy4](Deploy 4.png)
+![Deploy1](Deploy1.png)
+![Deploy2](Deploy2.png)
+![Deploy3](Deploy3.png)
+![Deploy4](Deploy4.png)
 
 - Since GCP charges a lot of money, I have taken the project down; however, it is still up in [here](https://gas-pipe-project.herokuapp.com/): 
 
