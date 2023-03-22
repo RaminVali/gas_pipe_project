@@ -13,7 +13,7 @@ The following packages are used in this project:
 
 ## File description:
 
-- Pipeline_Project_v4 is the last iteration of the notebook. I have exprimented with different methods of presenting geographical information including geopandas and shapely in the previous versions. 
+- Pipeline_Project_v4 is the last iteration of the notebook. I have experimented with different methods of presenting geographical information including geopandas and shapely in the previous versions. 
 - pipe-app.py is the streamlit webapp based on the last notebook.
 - Dockerfile: for cloud deployment
 - Data: contains geospacial data as well as the incident data. the code reads and presents both sets of data. Some preprocessing has been done in previous versions of the code and the results are stored in pickle files. 
@@ -26,12 +26,12 @@ The following packages are used in this project:
 ![Build2](Build2.png)
 
 - Once the build has been successful you can deploy the project on GCP
-![Deploy1](Deploy1.png)
-![Deploy2](Deploy2.png)
-![Deploy3](Deploy3.png)
-![Deploy4](Deploy4.png)
+![Deploy1](Deploy 1.png)
+![Deploy2](Deploy 2.png)
+![Deploy3](Deploy 3.png)
+![Deploy4](Deploy 4.png)
 
-- Since GCP charges money, I have taken the project down, however, it is still up in [here](https://gas-pipe-project.herokuapp.com/): 
+- Since GCP charges a lot of money, I have taken the project down; however, it is still up in [here](https://gas-pipe-project.herokuapp.com/): 
 
 I would like to acknowledge the following websites and resources:
 - [GeoPandas Tutorial: How to plot US Maps in Python](https://jcutrer.com/python/learn-geopandas-plotting-usmaps)
